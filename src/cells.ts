@@ -1,6 +1,5 @@
 export class Cell {
-  constructor(public cell: boolean, public symbol: boolean) {
-  }
+  constructor(public cell: string, public symbol: string) {}
 }
 
 export class CellBoard {
@@ -9,11 +8,10 @@ export class CellBoard {
 
   constructor() {
     for(let i = 0; i <= 35; i++){
-      console.log(this.randomSymbol);
-      if(i===this.randomSymbol){
-        this.cellsArray.push(new Cell(false, true));
+      if(i === this.randomSymbol){
+        this.cellsArray.push(new Cell('', 'o'));
       } else {
-        this.cellsArray.push(new Cell(false, false));
+        this.cellsArray.push(new Cell('', ''));
       }
     }
   }
