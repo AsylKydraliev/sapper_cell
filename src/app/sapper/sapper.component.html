@@ -1,0 +1,11 @@
+<div class="container">
+  <app-cell
+    *ngFor="let cell of cells"
+    [cell]="cell.cell"
+    [symbol]="cell.symbol"
+    (click)="onClickCell(cell.symbol)"
+  ></app-cell>
+</div>
+<span>Tries: {{ countClick }}</span>
+<button (click)="reset()" type="reset">Reset</button>
+<span class="text">{{gameResult}}</span>

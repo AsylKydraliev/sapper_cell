@@ -1,0 +1,19 @@
+.container{
+  width: 330px;
+  height: 330px;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 10px;
+  margin: 30px auto 30px;
+}
+
+span{
+  margin-right: 30px;
+}
+
+.text{
+  margin-left: 30px;
+}
+
+
+
